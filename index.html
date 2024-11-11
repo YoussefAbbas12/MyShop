@@ -136,24 +136,18 @@
         for(var i = 1 ; i <= 8; i++){
             document.querySelector('.products').innerHTML += `
             
-                        <a href="ProDetails.html">
-                            <div class="product" id="${products[i]["id"]}">
-                                <div class="details">
-                                    <a href=""><i class="fa-regular fa-heart" style="color: #F30000;--i: 0.3s"></i></a>
-                                    <a href=""><i class="fa-solid fa-circle-info" style="color: #0DCAF0;--i: 0.5s"></i></a>
-                                    <a onclick="addOrder()" href="cart.html?addID=${products[i].id}&color=red&size=L">
-                                        <i class="fa-solid fa-cart-shopping" style="color: #FD8A14; --i: 0.8s"></i>
-                                    </a>
-
-                                </div>
-                                <img src="assets/img/products/${products[i]["image"]}">
-                                <div class="info">
-                                    <h3>${products[i]["name"]}</h3>
-                                    <span>${products[i]["price"]} EGP</span>
-                                </div>
-                            </div>
-                        </a>
-            
+                <div class="product" id="${products[i]["id"]}">
+                    <div class="details">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #F30000;--i: 0.3s"></i></a>
+                        <a href=""><i class="fa-solid fa-circle-info" style="color: #0DCAF0;--i: 0.5s"></i></a>
+                        <a href="cart.html?id=${products[i]['id']}"><i class="fa-solid fa-cart-shopping" style="color: #FD8A14;--i: 0.8s"></i></a>
+                    </div>
+                        <a href="ProDetails.html?id=${products[i]['id']}"><img src="assets/img/products/${products[i]['image']}"></a>
+                    <div class="info">
+                        <h3>${products[i]["name"]}</h3>
+                        <span>${products[i]["price"]} EGP</span>
+                    </div>
+                </div>            
             `;
         }
 
@@ -171,24 +165,18 @@
                 let data = val.toLowerCase();
                 if(name.includes(data)) {
                     document.querySelector('.products').innerHTML += `
-                        <a href="ProDetails.html">
-                            <div class="product" id="${products[i]["id"]}">
-                                <div class="details">
-                                    <a href=""><i class="fa-regular fa-heart" style="color: #F30000;--i: 0.3s"></i></a>
-                                    <a href=""><i class="fa-solid fa-circle-info" style="color: #0DCAF0;--i: 0.5s"></i></a>
-                                    <a onclick="addOrder()" href="cart.html?addID=${products[i].id}&color=red&size=L">
-                                        <i class="fa-solid fa-cart-shopping" style="color: #FD8A14; --i: 0.8s"></i>
-                                    </a>
-
-                                </div>
-                                <img src="assets/img/products/${products[i]["image"]}">
-                                <div class="info">
-                                    <h3>${products[i]["name"]}</h3>
-                                    <span>${products[i]["price"]} EGP</span>
-                                </div>
-                            </div>
-                        </a>
-                    `;
+                <div class="product" id="${products[i]["id"]}">
+                    <div class="details">
+                        <a href=""><i class="fa-regular fa-heart" style="color: #F30000;--i: 0.3s"></i></a>
+                        <a href=""><i class="fa-solid fa-circle-info" style="color: #0DCAF0;--i: 0.5s"></i></a>
+                        <a href="cart.html?id=${products[i]['id']}"><i class="fa-solid fa-cart-shopping" style="color: #FD8A14;--i: 0.8s"></i></a>
+                    </div>
+                        <a href="ProDetails.html?id=${products[i]['id']}"><img src="assets/img/products/${products[i]['image']}"></a>
+                    <div class="info">
+                        <h3>${products[i]["name"]}</h3>
+                        <span>${products[i]["price"]} EGP</span>
+                    </div>
+                </div>                    `;
                 }
             }
         }
