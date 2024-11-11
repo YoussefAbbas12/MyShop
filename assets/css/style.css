@@ -342,3 +342,18 @@ p{
 .size-options button {
     margin-right: 5px;
 }
+
+@media (max-width: 600px){
+  .main,
+  .proDetailsCon,
+  .cartSfc{
+    padding-top: 150px;
+  }
+}
+@media (max-width: 800px){
+  .header{
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
