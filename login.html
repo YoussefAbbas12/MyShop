@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="assets/img/main-logo.png" alt="logo">
+            </div>
+            <ul class="MainLink">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <!-- <li><a href="#">Best Selling</a></li> -->
+            </ul>
+            <ul class="user">
+                <a href="signup.html" class="signup">
+                    <i class="fa-solid fa-user-large"></i>
+                    <p>Sign Up</p>
+                </a>
+            </ul>
+        </div>
+    
+    </header>
+
+    <section class="loginContainer container">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="card p-4" style="width: 100%; max-width: 400px;">
+                <h2 class="text-center mb-4">Log In</h2>
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password...">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="forgetPassword.html">Forget password?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are a dedicated team focused on providing high-quality content and services to our users.</p>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center"><i class="fa-regular fa-envelope p-2"></i>: youssefabbas12@gmail.com</li>
+                        <li class="d-flex align-items-center"><i class="fa-solid fa-phone p-2"></i>: +123 456 7890</li>
+                        <li class="d-flex align-items-center"><i class="fa-solid fa-location-dot p-2"></i>: 1234 Street Name, City, Country</li>
+                    </ul>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="http://www.google.com" class="linkedin"><i style="color: #10C246;" class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="http://www.google.com" class="facebook"><i style="color: #0866FF;" class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="http://www.google.com" class="twitter"><i style="color: #4285F5;" class="fa-brands fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="http://www.google.com" class="instagram"><i style="color: #F84638;" class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Youssef Abbas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
