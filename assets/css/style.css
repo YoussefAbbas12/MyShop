@@ -357,3 +357,98 @@ p{
     padding-right: 0;
   }
 }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-section {
+    flex: 1;
+}
+
+.shipping-section {
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the Product Table */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: green;
+}
+
+/* Styling for Form Inputs with Placeholder Text */
+.shipping-section input, .shipping-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.shipping-section textarea {
+    resize: vertical;
+}
+
+.terms {
+    margin-top: 15px;
+}
+
+.confirm-button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #1357bd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #11418a;
+}
