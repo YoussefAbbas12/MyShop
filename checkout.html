@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Product Section as a Table -->
+        <div class="product-section">
+            <h2>Order Summary</h2>
+            <table class="product-table">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="hoodie.png" alt="Hoodie" class="product-image">
+                        <div class="product-info">
+                            <h3>CR7 | RONALDO& RealMadrid - Classic Hoodie</h3>
+                            <p>Color: Black - Size: L</p>
+                        </div>
+                    </td>
+                    <td>3</td>
+                    <td>475 EGP</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Subtotal</td>
+                    <td>1,425 EGP</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Shipping</td>
+                    <td>Select Governorate</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Shipping time</td>
+                    <td>2 to 5 Business days</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Total</strong></td>
+                    <td><strong>1,425 EGP</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Shipping Details Section -->
+        <div class="shipping-section">
+            <h2>Shipping Details</h2>
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Full Name *" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number *" required>
+                <input type="tel" id="additional-number" name="additional-number" placeholder="Additional Number (optional)">
+                <input type="text" id="governorate" name="governorate" placeholder="Governorate *" required>
+                <input type="text" id="address" name="address" placeholder="Full Address *" required>
+                <textarea id="notes" name="notes" placeholder="Any Notes (optional)"></textarea>
+
+                <button type="submit" class="confirm-button">Confirm Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
